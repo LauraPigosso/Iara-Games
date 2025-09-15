@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand+SC&display=swap');
+
+:root {
+  --cor-fundo: #FFF8DC;
+  --cor-texto: #222;
+  --cor-destaque1: #FCD326; 
+  --cor-destaque2: #FEB821; 
+  --cor-escuro: #005C44; 
+
+  --fonte-principal: 'Nunito', sans-serif;
+  --fonte-titulos: 'Patrick Hand SC', cursive;
+
+  --sombra-verde: 4px 4px var(--cor-escuro);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: var(--fonte-principal);
+  background: #fff8dc;
+}
+
+thead {
+  background: var(--cor-destaque2);
+  color:var(--cor-escuro);
+}
+
+th, td {
+  border: 2px solid var(--cor-escuro);
+  padding: 12px;
+  text-align: center;
+}
+
+td img {
+  border-radius: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #ffe5b4;
+  transition: 0.3s;
+}
+
+a {
+  color: var(--cor-escuro);
+  font-weight: bold;
+}
