@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand+SC&display=swap');
+
 :root {
-  /* 🎨 Paleta de cores */
   --cor-fundo: #FFF8DC;
   --cor-texto: #222;
   --cor-destaque1: #FCD326; 
   --cor-destaque2: #FEB821; 
   --cor-escuro: #005C44;    /* verde escuro */
 
-  /* 🔤 Fontes */
   --fonte-principal: 'Nunito', sans-serif;
-  --fonte-titulos: 'Cinzel Decorative', cursive;
+  --fonte-titulos: 'Patrick Hand SC', cursive;
 
-  /* 🌟 Efeitos */
-  --sombra-preta: 2px 2px #000;
   --sombra-verde: 4px 4px var(--cor-escuro);
 }
 
@@ -44,19 +42,36 @@ nav a {
   background: var(--cor-destaque1);
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  box-shadow: var(--sombra-preta);
+  box-shadow: var(--sombra-verde);
+  font-family: var(--fonte-principal);
 }
 
 nav a:hover {
   background: var(--cor-destaque2);
 }
 
-/* Títulos */
-h2 {
-  font-family: var(--fonte-titulos);
-  color: var(--cor-destaque2);
+h1 {
+font-family: var(--fonte-titulos);
+  color: var(--cor-fundo);
   text-align: center;
   margin: 2rem 0;
+}
+
+h2 {
+  font-family: var(--fonte-titulos);
+  color: var(--cor-fundo);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+main {
+    text-align: center;
+    padding: 1rem;
+}
+
+main img {
+    max-width: 20rem;
+    padding: 1rem;
 }
 
 /* Lista de jogos */
@@ -81,4 +96,18 @@ h2 {
 .card h3 {
   font-family: var(--fonte-titulos);
   color: var(--cor-escuro);
+}
+
+.card a {
+  font-family: var(--fonte-principal);
+  color: var(--cor-escuro);
+  text-align: center;
+  margin: 2rem 0;
+  font-family: var(--fonte-principal);
+
+}
+
+footer {
+    padding: 1rem;
+    color: #ffff;
 }
